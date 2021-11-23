@@ -47,7 +47,7 @@ header .navbar .item button {
   background: rgba(226, 226, 226, 0.5);
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 900px) {
   header .navbar {
     padding: 20px 0;
     -webkit-box-orient: vertical;
@@ -399,6 +399,74 @@ header .navbar .item button {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .body .first {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .body .first .col-1 {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body .first .col-2 {
+    height: 400px;
+    background-image: url("../images/desktop/image-transform.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .body .second {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .body .second .col-1 {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .body .second .col-2 {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body .third {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .body .third .col-1 {
+    background-size: cover;
+  }
+  .body .third .col-1 .text {
+    width: 80%;
+    margin: 0 10%;
+    top: 65%;
+  }
+  .body .third .col-2 {
+    background-size: cover;
+  }
+  .body .third .col-2 .text {
+    width: 80%;
+    margin: 0 10%;
+    top: 65%;
+  }
+}
+
 .allclients {
   display: -ms-grid;
   display: grid;
@@ -528,6 +596,33 @@ header .navbar .item button {
   .photo div:nth-child(4) {
     background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
     background-position: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .photo {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .photo div:nth-child(1) {
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .photo div:nth-child(2) {
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .photo div:nth-child(3) {
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .photo div:nth-child(4) {
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
 

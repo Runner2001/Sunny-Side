@@ -202,3 +202,66 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .body {
+    .first {
+      grid-template-columns: 1fr 1fr;
+
+      .col-1 {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .col-2 {
+        height: 400px;
+        background-image: url("../images/desktop/image-transform.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .second {
+      grid-template-columns: 1fr 1fr;
+
+      .col-1 {
+        background-image: url("../images/desktop/image-stand-out.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .col-2 {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .third {
+      grid-template-columns: 1fr 1fr;
+
+      .col-1 {
+        background-size: cover;
+
+        .text {
+          width: 80%;
+          margin: 0 10%;
+          top: 65%;
+        }
+      }
+
+      .col-2 {
+        background-size: cover;
+
+        .text {
+          width: 80%;
+          margin: 0 10%;
+          top: 65%;
+        }
+      }
+    }
+  }
+}

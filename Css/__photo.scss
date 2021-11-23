@@ -49,3 +49,30 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .photo {
+    grid-template-columns: 1fr 1fr;
+
+    div:nth-child(1) {
+      background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    div:nth-child(2) {
+      background-image: url("../images/desktop/image-gallery-orange.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    div:nth-child(3) {
+      background-image: url("../images/desktop/image-gallery-cone.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    div:nth-child(4) {
+      background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
