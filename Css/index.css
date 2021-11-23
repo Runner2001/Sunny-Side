@@ -18,6 +18,10 @@ header .navbar {
           align-items: center;
 }
 
+header .navbar .logo span {
+  visibility: hidden;
+}
+
 header .navbar .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,15 +55,40 @@ header .navbar .item button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  header .navbar .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .navbar .logo span {
+    visibility: visible;
+  }
   header .navbar .item {
     visibility: hidden;
+    margin-top: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
   header .navbar .item .nav-item {
+    font-weight: normal;
+    color: black;
     padding: 10px 0px;
+  }
+  header .navbar .item button {
+    color: black;
+    font-weight: bold;
+    background: #e2e2e2;
+  }
+  header .navbar .show {
+    width: 100%;
+    background: rgba(226, 226, 226, 0.5);
+    visibility: visible;
   }
 }
 

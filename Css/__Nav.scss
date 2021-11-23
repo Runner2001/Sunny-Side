@@ -9,6 +9,12 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    .logo {
+      span {
+        visibility: hidden;
+      }
+    }
+
     .item {
       display: flex;
       align-items: center;
@@ -37,13 +43,34 @@ header {
       padding: 20px 0;
       flex-direction: column;
 
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        span {
+          visibility: visible;
+        }
+      }
       .item {
         visibility: hidden;
+        margin-top: 20px;
         flex-direction: column;
 
         .nav-item {
+          font-weight: normal;
+          color: black;
           padding: 10px 0px;
         }
+        button {
+          color: black;
+          font-weight: bold;
+          background: rgba($color: #e2e2e2, $alpha: 1);
+        }
+      }
+      .show {
+        width: 100%;
+        background: rgba($color: #e2e2e2, $alpha: 0.5);
+        visibility: visible;
       }
     }
   }

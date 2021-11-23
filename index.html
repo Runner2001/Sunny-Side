@@ -10,8 +10,11 @@
   <body>
     <header>
       <nav class="navbar">
-        <h3 class="logo"><img src="./images/logo.svg" alt="logo" /></h3>
-        <ul class="item">
+        <h3 class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+          <span><img src="./images/icon-hamburger.svg" id="toggle" /></span>
+        </h3>
+        <ul class="item" id="item">
           <li class="nav-item">About</li>
           <li class="nav-item">Services</li>
           <li class="nav-item">Projects</li>
@@ -145,5 +148,14 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      const toggleMenu = document.getElementById("toggle"),
+        menu = document.getElementById("item");
+
+      toggleMenu.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
