@@ -1,0 +1,31 @@
+footer {
+  background: $footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $cyan;
+
+  .footer {
+    padding: 5% 0;
+  }
+  .contact {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    li {
+      margin: 0 20px;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    ul {
+      margin-left: 10px;
+    }
+    li {
+      margin: 0 10px;
+    }
+  }
+}

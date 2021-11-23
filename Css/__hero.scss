@@ -1,0 +1,35 @@
+.hero {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .herotext {
+    font-size: 46px;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero {
+    background-image: url("../images/mobile/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .herotext {
+      padding-bottom: 5rem;
+      letter-spacing: 0ch;
+    }
+  }
+}

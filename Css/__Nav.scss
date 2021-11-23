@@ -1,0 +1,50 @@
+header {
+  position: fixed;
+  width: 90vw;
+  margin: 0 5vw;
+
+  .navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item {
+      display: flex;
+      align-items: center;
+
+      .nav-item {
+        padding: 0 10px;
+        color: white;
+        font-weight: bold;
+      }
+      button {
+        padding: 10px 20px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        color: white;
+        font-weight: bold;
+        background: rgba($color: #e2e2e2, $alpha: 0.5);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  header {
+    .navbar {
+      padding: 20px 0;
+      flex-direction: column;
+
+      .item {
+        visibility: hidden;
+        flex-direction: column;
+
+        .nav-item {
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+@import "./_config";
+
+.body {
+  .first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+
+    .col-1 {
+      width: 45%;
+      margin-left: 27.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      h3 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #706a70;
+        margin-bottom: 30px;
+      }
+      h5 {
+        letter-spacing: 3px;
+        line-height: -10px;
+        border-bottom: 5px solid $yello;
+      }
+    }
+
+    .col-2 {
+      background-image: url("../images/desktop/image-transform.jpg");
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  .second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+
+    .col-1 {
+      background-image: url("../images/desktop/image-stand-out.jpg");
+      background-position: center;
+      background-size: contain;
+    }
+    .col-2 {
+      width: 45%;
+      margin-left: 27.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: baseline;
+      h3 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #706a70;
+        margin-bottom: 30px;
+      }
+      h5 {
+        letter-spacing: 3px;
+        line-height: -10px;
+        border-bottom: 5px solid $softred;
+      }
+    }
+  }
+  .third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+
+    .col-1 {
+      background: url("../images/desktop/image-graphic-design.jpg");
+      background-position: center;
+      background-size: contain;
+
+      .text {
+        width: 50%;
+        margin: 0 25%;
+        position: relative;
+        top: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          color: $cyan;
+          margin-bottom: 20px;
+        }
+        p {
+          text-align: center;
+          font-size: 16px;
+          color: $cyan;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .col-2 {
+      background: url("../images/desktop/image-photography.jpg");
+      background-position: center;
+      background-size: contain;
+
+      .text {
+        width: 50%;
+        margin: 0 25%;
+        position: relative;
+        top: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          color: $darkblue;
+          margin-bottom: 20px;
+        }
+        p {
+          text-align: center;
+          font-size: 16px;
+          color: $darkblue;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .body {
+    .first {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 700px;
+
+      .col-1 {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        justify-content: flex-start;
+        align-items: center;
+        order: 2;
+      }
+
+      .col-2 {
+        height: 300px;
+        background-image: url("../images/desktop/image-transform.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .second {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 700px;
+
+      .col-1 {
+        background-image: url("../images/desktop/image-stand-out.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+      }
+      .col-2 {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    .third {
+      grid-template-columns: 1fr;
+      height: 1000px;
+
+      .col-1 {
+        background-size: cover;
+
+        .text {
+          width: 80%;
+          margin: 0 10%;
+          top: 65%;
+        }
+      }
+
+      .col-2 {
+        background-size: cover;
+
+        .text {
+          width: 80%;
+          margin: 0 10%;
+          top: 65%;
+        }
+      }
+    }
+  }
+}
